@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDbAPI", "BandDbAPI\BandDbAPI.csproj", "{1B69261F-5815-4EB2-A773-D5750083AEEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDbVue", "BandDbVue\BandDbVue.csproj", "{BC76661C-65DB-4A6B-B0EA-C252D318F4F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{1B69261F-5815-4EB2-A773-D5750083AEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B69261F-5815-4EB2-A773-D5750083AEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B69261F-5815-4EB2-A773-D5750083AEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC76661C-65DB-4A6B-B0EA-C252D318F4F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC76661C-65DB-4A6B-B0EA-C252D318F4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC76661C-65DB-4A6B-B0EA-C252D318F4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC76661C-65DB-4A6B-B0EA-C252D318F4F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

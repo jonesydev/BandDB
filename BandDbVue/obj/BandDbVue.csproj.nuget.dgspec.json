@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/jonesy/source/repos/BandDb/BandDbAPI/BandDbAPI.csproj": {}
+    "/home/jonesy/source/repos/BandDb/BandDbVue/BandDbVue.csproj": {}
   },
   "projects": {
-    "/home/jonesy/source/repos/BandDb/BandDbAPI/BandDbAPI.csproj": {
+    "/home/jonesy/source/repos/BandDb/BandDbVue/BandDbVue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jonesy/source/repos/BandDb/BandDbAPI/BandDbAPI.csproj",
-        "projectName": "BandDbAPI",
-        "projectPath": "/home/jonesy/source/repos/BandDb/BandDbAPI/BandDbAPI.csproj",
+        "projectUniqueName": "/home/jonesy/source/repos/BandDb/BandDbVue/BandDbVue.csproj",
+        "projectName": "BandDbVue",
+        "projectPath": "/home/jonesy/source/repos/BandDb/BandDbVue/BandDbVue.csproj",
         "packagesPath": "/home/jonesy/.nuget/packages/",
-        "outputPath": "/home/jonesy/source/repos/BandDb/BandDbAPI/obj/",
+        "outputPath": "/home/jonesy/source/repos/BandDb/BandDbVue/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jonesy/.nuget/NuGet/NuGet.Config"
@@ -46,10 +46,6 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.7, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[8.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
