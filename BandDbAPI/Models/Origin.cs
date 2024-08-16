@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace BandDbAPI.Models
 {
-    public class Influence
+    public class Origin
     {
         public int Id { get; set; }
-        public Member MemberObj { get; set; }
-        private bool IsMember { get; set; }
+        public string? City { get; set; }
+        public string? Country { get; set; }
     }
 }

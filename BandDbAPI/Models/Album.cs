@@ -11,8 +11,7 @@ namespace BandDbAPI.Models
         public string? Name { get; set; }
         public int Year { get; set; }
         public DateOnly Date { get; set; }
+        public Label LabelObj { get; set; }
         public List<Member>? Personnel { get; set; }
-
-
     }
 }
