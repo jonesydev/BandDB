@@ -9,9 +9,9 @@ namespace BandDbAPI.Models
     {
         public int Id { get; set; }
         public string? Name { get; set; }
-        public List<Member> Personnel { get; set; }
+        public List<Member>? Personnel { get; set; }
         public int Year { get; set; }
-        public Origin OriginObj { get; set; }
-
+        public Origin? OriginObj { get; set; }
+        private bool IsComplete { get; set; }
     }
 }

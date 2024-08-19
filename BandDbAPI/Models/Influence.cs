@@ -8,7 +8,7 @@ namespace BandDbAPI.Models
     public class Influence
     {
         public int Id { get; set; }
-        public Member MemberObj { get; set; }
+        public Member? MemberObj { get; set; }
         private bool IsMember { get; set; }
     }
 }

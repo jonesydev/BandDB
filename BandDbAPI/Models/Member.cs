@@ -15,7 +15,8 @@ namespace BandDbAPI.Models
         public DateOnly DateOfBirth { get; set; }
         public DateOnly DateOfDeath { get; set; }
         public int Age { get; set; }
-        public List<Role> Roles { get; set; }
-        public Origin OriginObj { get; set; }
+        public List<Role>? Roles { get; set; }
+        public Origin? OriginObj { get; set; }
+        private bool IsComplete { get; set; }
     }
 }
