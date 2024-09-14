@@ -11,7 +11,7 @@ namespace BandDbAPI.Models
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public string? MiddleName { get; set; }
-        public string? FullName { get; set; }
+        public string? KnownAs { get; set; }
         public DateOnly DateOfBirth { get; set; }
         public DateOnly DateOfDeath { get; set; }
         public int Age { get; set; }
