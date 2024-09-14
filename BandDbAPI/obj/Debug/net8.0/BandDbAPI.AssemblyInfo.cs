@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BandDbAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6379d0a902bc1a2b1888e363d1d740eaf7481fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce3f035daebba8867e7d4d9cb0c15631ae17499b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BandDbAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BandDbAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
