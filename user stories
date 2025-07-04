@@ -1,0 +1,38 @@
+BandDb User Story / Treatment / Requirements
+
+
+**Enter the name of a band or musician.** 
+
+Click “Search” / hit “Enter”. 
+
+A list of studio albums by the artist comes up.
+
+Click on an album.
+
+The details of the album come up including:
+    • name of the album
+    • year it was released
+    • the personnel and their role
+    • the label
+
+Click on a member of the personnel and get:
+    • first name
+    • middle name
+    • last name
+    • known as
+    • DOB
+    • DOD if applicable
+    • age
+    • origin
+    • list of other projects
+    • list of influences
+
+Click on the label and get:
+    • name of the label
+    • year it was formed
+    • the artists they represent
+    • whether they’re still active
+    • if not, the year they went defunct
+    • place of origin
+
+
