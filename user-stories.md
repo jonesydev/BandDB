@@ -10,10 +10,11 @@ A list of studio albums by the artist comes up.
 Click on an album.
 
 The details of the album come up including:
-    * name of the album
-    * year it was released
-    * the personnel and their role
-    * the label
+    *
+      name of the album
+      year it was released
+      the personnel and their role
+      the label
 
 Click on a member of the personnel and get:
     • first name
