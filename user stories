@@ -1,18 +1,19 @@
-** BandDb User Story / Treatment / Requirements **
+BandDb User Story / Treatment / Requirements
 
+Bandy Bee – a busking bumble bee with an old guitar, old boots, and old hat upside down to collect money.
 
-Enter the name of a band or musician. 
+Enter the name of an artist (band or musician). 
 
 Click “Search” / hit “Enter”. 
 
-A list of studio albums by the artist comes up.
+A list of studio albums by the artist, as well as any project they worked on, comes up.
 
-Click on an album.
+Click on an album or project.
 
 The details of the album come up including:
     • name of the album
     • year it was released
-    • the personnel and their role
+    • the personnel and their roles
     • the label
 
 Click on a member of the personnel and get:
@@ -23,8 +24,8 @@ Click on a member of the personnel and get:
     • DOB
     • DOD if applicable
     • age
-    • origin
-    • list of other projects
+    • place origin
+    • list of other albums and projects
     • list of influences
 
 Click on the label and get:
@@ -35,4 +36,32 @@ Click on the label and get:
     • if not, the year they went defunct
     • place of origin
 
+Functions – Artists
+    • listArtists
+    • getArtist
+    • editArtist
+    • addArtist
+    • deleteArtist
 
+Functions – Albums (Do we need a separate set for records, e.g. singles?)
+    • listAlbums
+    • getAlbums
+    • editAlbums
+    • addAlbums
+    • deleteAlbums
+
+Functions – Labels
+    • listLabels
+    • getLabels
+    • editLabels
+    • addLabels
+    • deleteLabels
+
+Functions – Members
+    • listMembers
+    • getMember
+    • editMember
+    • addMember
+    • deleteMember
+
+Only admins can add, edit, and delete anything.
