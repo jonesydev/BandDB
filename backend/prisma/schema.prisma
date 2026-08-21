@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model albums {
+  album_id     BigInt    @id @default(autoincrement())
+  album_name   String?
+  release_date DateTime? @db.Date
+  artist_id    BigInt
+  members      BigInt[]
+  label        BigInt?
+  artists      artists   @relation(fields: [artist_id], references: [artist_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_albums_artists")
+}
+
+model artists {
+  artist_id     BigInt   @id @default(autoincrement())
+  artist_name   String?
+  styles        String[]
+  influences    String[]
+  artist_albums BigInt[]
+  albums        albums[]
+}
+
+model labels {
+  label_id        BigInt   @id @default(autoincrement())
+  label_name      String?
+  year_founded    Int?
+  is_active       Boolean?
+  year_ended      Int?
+  origin          String?
+  founders        String[]
+  current_artists BigInt[]
+  past_artists    BigInt[]
+  label_albums    BigInt[]
+}
+
+model members {
+  member_id         BigInt    @id @default(autoincrement())
+  first_name        String?
+  middle_name       String?
+  last_name         String?
+  known_as          String?
+  date_of_birth     DateTime? @db.Date
+  date_of_death     DateTime? @db.Date
+  age               Int?
+  origin            String?
+  other_projects    Json?
+  influences        String[]
+  years_with_artist String?
+  role              String[]
+}

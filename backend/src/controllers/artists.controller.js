@@ -1,9 +1,10 @@
-import {getAllArtists, getArtistById, createArtist, updateArtist, deleteArtist} 
+import {getAllItems, getItemById, createItem, updateItem, deleteItem} 
   from '../models/artists.model.js';
 
 export const getAllArtists = async (req, res) => {
   try {
-    const artists = await Artist.findAll();
+    console.log("getAllArtists called from controller");
+    const artists = await prisma.artist.findMany();
     res.json(artists);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -12,10 +13,14 @@ export const getAllArtists = async (req, res) => {
 
 export const getArtistById = async (req, res) => {
   try {
-    const artist = await Artist.findByPk(req.params.id);
+    const artist = await prisma.artist.findUnique({
+      where: { id: parseInt(req.params.id) },
+    });
+
     if (!artist) {
       return res.status(404).json({ message: "Artist not found" });
     }
+
     res.json(artist);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -24,7 +29,10 @@ export const getArtistById = async (req, res) => {
 
 export const createArtist = async (req, res) => {
   try {
-    const artist = await Artist.create(req.body);
+    const artist = await prisma.artist.create({
+      data: req.body,
+    });
+
     res.status(201).json(artist);
   } catch (error) {
     res.status(400).json({ message: error.message });
@@ -33,11 +41,10 @@ export const createArtist = async (req, res) => {
 
 export const updateArtist = async (req, res) => {
   try {
-    const artist = await Artist.findByPk(req.params.id);
-    if (!artist) {
-      return res.status(404).json({ message: "Artist not found" });
-    }
-    await artist.update(req.body);
+    const artist = await prisma.artist.update({
+      where: { id: parseInt(req.params.id) },
+      data: req.body,
+    });
     res.json(artist);
   } catch (error) {
     res.status(400).json({ message: error.message });
@@ -46,11 +53,14 @@ export const updateArtist = async (req, res) => {
 
 export const deleteArtist = async (req, res) => {
   try {
-    const artist = await Artist.findByPk(req.params.id);
+    const artist = await prisma.artist.delete({
+      where: { id: parseInt(req.params.id) },
+    });
+
     if (!artist) {
       return res.status(404).json({ message: "Artist not found" });
     }
-    await artist.destroy();
+    
     res.json({ message: "Artist deleted successfully" });
   } catch (error) {
     res.status(500).json({ message: error.message });
