@@ -1,5 +1,5 @@
 import {getAllItems, getItemById, createItem, updateItem, deleteItem} 
-  from '../models/artists.model.js';
+  from './artists.model.js';
 
 export const getAllArtists = async (req, res) => {
   try {

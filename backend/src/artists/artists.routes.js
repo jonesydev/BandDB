@@ -1,6 +1,6 @@
 import express from "express";
 import { getAllArtists, getArtistById, createArtist, updateArtist, deleteArtist } 
-  from "../controllers/artists.controller.js";
+  from "./artists.controller.js";
 
 const router = express.Router();
 
