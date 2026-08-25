@@ -4,5 +4,11 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "node",
+
+    server: {   
+      deps: {
+        external: ["@prisma/client"],
+      },
+    },
   },
 });

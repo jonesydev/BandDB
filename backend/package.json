@@ -12,9 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "7.9.1",
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "pg": "^8.23.0",
     "swagger-jsdoc": "^6.3.0",
     "swagger-ui-express": "^5.0.1"
   },
@@ -28,5 +30,10 @@
   },
   "overrides": {
     "deepmerge-ts": "^8.0.2"
+  },
+  "allowScripts": {
+    "@prisma/engines@7.9.1": true,
+    "@scarf/scarf@1.4.0": true,
+    "prisma@7.9.1": true
   }
 }
