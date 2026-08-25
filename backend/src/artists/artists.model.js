@@ -3,8 +3,7 @@ import db from '../repository/db.mock.js';
 export const getAllItems = async () => {
   try {
     console.log("getAllItems called from model");
-    const artists = await db?.artists;
-    //const artists = await db.Artist.findAll();
+    const artists = await db?.artists;    
     return artists;
   } catch (error) {
     throw new Error(error.message);
