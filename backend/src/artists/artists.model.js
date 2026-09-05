@@ -1,9 +1,10 @@
-import db from '../repository/db.mock.js';
+import prisma from "../repository/prisma.js";
 
 export const getAllItems = async () => {
   try {
     console.log("getAllItems called from model");
-    const artists = await db?.artists;    
+    const artists = await prisma.artists.findMany();
+    //console.log("Artists retrieved:", artists);
     return artists;
   } catch (error) {
     throw new Error(error.message);
@@ -12,7 +13,9 @@ export const getAllItems = async () => {
 
 export const getItemById = async (id) => {
   try {
-    const artist = await db?.artists?.find((a) => a.id === id);
+    const artist = await prisma.artists.findUnique({
+      where: { id }
+    });
     if (!artist) {
       throw new Error("Artist not found");
     }

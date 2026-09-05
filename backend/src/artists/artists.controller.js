@@ -1,13 +1,14 @@
-import {getAllItems, getItemById, createItem, updateItem, deleteItem} 
-  from './artists.model.js';
+ import {getAllItems, getItemById, createItem, updateItem, deleteItem} 
+   from './artists.model.js';
 
-export const getAllArtists = async (req, res) => {
+export const getAllArtists = (req, res) => {
   try {
     console.log("getAllArtists called from controller");
-    const artists = await prisma.artist.findMany();
-    res.json(artists);
+    const artists = getAllItems();
+    console.log("Artists retrieved:", artists);
+    res.send(artists);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    res.status(500).send({ message: error.message });
   }
 };
 

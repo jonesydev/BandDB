@@ -2,9 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "vitest",
     "test:run": "vitest run"
   },
@@ -16,6 +18,7 @@
     "@prisma/client": "7.9.1",
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "mysql2": "^3.24.3",
     "pg": "^8.23.0",
     "swagger-jsdoc": "^6.3.0",
     "swagger-ui-express": "^5.0.1"
@@ -29,7 +32,13 @@
     "vitest": "^4.1.11"
   },
   "overrides": {
-    "deepmerge-ts": "^8.0.2"
+    "deepmerge-ts": "^8.0.2",
+    "prisma": {
+      "mysql2": "^3.24.3"
+    },
+    "@prisma/client": {
+      "mysql2": "^3.24.3"
+    }
   },
   "allowScripts": {
     "@prisma/engines@7.9.1": true,
